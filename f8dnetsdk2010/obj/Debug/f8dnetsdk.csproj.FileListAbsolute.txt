@@ -1,0 +1,15 @@
+C:\Users\KevYu.WAYI\Desktop\f8dnetsdk2010\bin\f8dnetsdk.dll
+C:\Users\KevYu.WAYI\Desktop\f8dnetsdk2010\bin\f8dnetsdk.pdb
+C:\Users\KevYu.WAYI\Desktop\f8dnetsdk2010\obj\Debug\f8dnetsdk.dll
+C:\Users\KevYu.WAYI\Desktop\f8dnetsdk2010\obj\Debug\f8dnetsdk.pdb
+C:\Users\KevYu.WAYI\Desktop\f8dnetsdk2010\bin\Newtonsoft.Json.dll
+C:\Users\KevYu.WAYI\Desktop\f8dnetsdk2010\bin\Newtonsoft.Json.pdb
+C:\Users\KevYu.WAYI\Desktop\f8dnetsdk2010\bin\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\f8dnetsdk2010\bin\f8dnetsdk.dll
+C:\inetpub\wwwroot\f8dnetsdk2010\bin\f8dnetsdk.pdb
+C:\inetpub\wwwroot\f8dnetsdk2010\bin\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\f8dnetsdk2010\bin\Newtonsoft.Json.pdb
+C:\inetpub\wwwroot\f8dnetsdk2010\bin\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\f8dnetsdk2010\obj\Debug\f8dnetsdk.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\f8dnetsdk2010\obj\Debug\f8dnetsdk.dll
+C:\inetpub\wwwroot\f8dnetsdk2010\obj\Debug\f8dnetsdk.pdb
