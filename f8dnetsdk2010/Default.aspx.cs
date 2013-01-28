@@ -16,14 +16,14 @@ namespace f8dnetsdk2010
         //TO-DO
         string APP_ID = "545";                                  //YOUR_APP_ID
         string APP_SECRET = "d1496ee7308c409a27df5bcd6f4a482f";          //YOUR_APP_SECRET
-        string REDIRECT_URI = "http://localhost/f8dnetsdk2010/Default.aspx"; //redirect to your login check after login F8D
+        string REDIRECT_URI = "http://localhost/f8d/Default.aspx"; //redirect to your login check after login F8D
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             //1.基本設定
             NameValueCollection config = new NameValueCollection();
-            config.Add("appId", APP_ID); //"YOUR_REDIRECT_URI"
+            config.Add("appId", APP_ID);
             config.Add("secret", APP_SECRET);
             config.Add("redirect_uri", REDIRECT_URI);            
             //config.Add("log_path", "d:\\data.log");

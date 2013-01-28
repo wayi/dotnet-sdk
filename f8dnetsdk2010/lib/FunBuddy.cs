@@ -18,7 +18,7 @@ namespace f8dnetsdk2010
     {
         //const
         string API_SDK = "F8D .NET SDK";
-        string API_VERSION = "1.1.2";
+        string API_VERSION = "1.1.3";
         string URL_API = "https://api.fun.wayi.com.tw/";
 
         //attribute
@@ -116,7 +116,8 @@ namespace f8dnetsdk2010
             {
                 //get token from session
                 this.log("get Session from url");
-                this.session = JObject.Parse(session);
+                string session_json = HttpUtility.UrlDecode(HttpUtility.UrlDecode(session));
+                this.session = JObject.Parse(session_json);
             }
             else if (!(string.IsNullOrEmpty(code)))
             {
@@ -130,7 +131,7 @@ namespace f8dnetsdk2010
                 param.Add("client_secret", this.appSecret);
 
                 JObject result = this.makeRequest(this.URL_API + "oauth/token", param, "GET");
-                if ((int)result["error"] > 0)
+                if (!(result["error"] is JValue))
                 {
                     //HttpContext.Current.Response.Write(result.ToString());
                     throw new ApiException(result);                    
@@ -301,7 +302,7 @@ namespace f8dnetsdk2010
         public string message;
         public ApiException(JObject error)
         {
-            this.code = (int)(error["error"]["code"]);
+            this.code = (int)error["error"]["code"];
             this.message = (string)error["error"]["message"];
         }
         public ApiException(int code, string message)
