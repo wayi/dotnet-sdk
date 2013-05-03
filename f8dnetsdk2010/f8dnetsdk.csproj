@@ -10,7 +10,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>f8dnetsdk</RootNamespace>
+    <RootNamespace>f8dnetsdk2010</RootNamespace>
     <AssemblyName>f8dnetsdk</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
@@ -52,6 +52,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Callback.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="lib\json\Net20\Newtonsoft.Json.dll" />
     <Content Include="lib\json\Net20\Newtonsoft.Json.pdb" />
@@ -74,6 +75,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Callback.aspx.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Callback.aspx.designer.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -81,6 +89,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="lib\Currency.cs" />
     <Compile Include="lib\FunBuddy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

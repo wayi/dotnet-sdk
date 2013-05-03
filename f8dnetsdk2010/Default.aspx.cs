@@ -18,6 +18,7 @@ namespace f8dnetsdk2010
         string APP_SECRET = "d1496ee7308c409a27df5bcd6f4a482f";          //YOUR_APP_SECRET
         string REDIRECT_URI = "http://localhost/f8d/Default.aspx"; //redirect to your login check after login F8D
 
+        string Access_Token = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -58,7 +59,8 @@ namespace f8dnetsdk2010
                 JObject me = f8d.api("v1/me/account", "GET", new NameValueCollection());
                 lblAccount.Text = me["pid"].ToString();
                 lblName.Text = me["username"].ToString();
-                lblAccessToken.Text = f8d.getAccessToken();
+                Access_Token = f8d.getAccessToken();
+                lblAccessToken.Text = Access_Token;
                 lblUid.Text = me["uid"].ToString();
             }
             catch (ApiException ex)
@@ -91,5 +93,17 @@ namespace f8dnetsdk2010
             GridView1.DataBind();
             //logoutUrl = $fun->getLogoutUrl();
         }
+
+        protected string Get_Appid()
+        {
+            return APP_ID;
+        }
+
+        protected string Get_AccessToken()
+        {
+            return Access_Token;
+        }
+        
+
     }
 }
