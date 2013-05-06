@@ -55,7 +55,7 @@ h2 {
 
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="https://api.fun.wayi.com.tw/assets/jqplugin/f8d.js?v=20121017"></script>
+	<script type="text/javascript" src="//api.fun.wayi.com.tw/assets/jqplugin/f8d.js?v=20121017"></script>
     
 </head>
 <body>
@@ -80,7 +80,7 @@ h2 {
 	</tr>
 
 </table>
-<link rel="stylesheet" type="text/css" href="https://api.fun.wayi.com.tw/assets/socialplugin/css/fun_share.css">
+<link rel="stylesheet" type="text/css" href="//api.fun.wayi.com.tw/assets/socialplugin/css/fun_share.css">
   
 <br/>
 <h4>2.<a target="_blank" href="http://developers.fun.wayi.com.tw/guides/currency_sdk#儲值模式(廠商實作介面)">儲值模式</a></h4>
@@ -96,9 +96,9 @@ Reply
         <br />
         <p>
             範例 <a href="https://github.com/wayi/dotnet-sdk" title="F8D .NET SDK">https://github.com/wayi/dotnet-sdk</a>。 線上文件 
-            <a href="http://developers.fun.wayi.com.tw/component/asp" 
+            <a href="http://developers.funbuddy.com/component/asp" 
                 title="ASP.NET Website">
-            http://developers.fun.wayi.com.tw/component/asp</a>。 
+            http://developers.funbuddy.com/component/asp</a>。 
         </p>
 
     </div>
