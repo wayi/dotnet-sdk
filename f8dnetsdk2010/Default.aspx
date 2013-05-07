@@ -55,14 +55,14 @@ h2 {
 
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="//api.fun.wayi.com.tw/assets/jqplugin/f8d.js?v=20121017"></script>
+	<script type="text/javascript" src="//api.funbuddy.com/assets/jqplugin/f8d.js?v=20121017"></script>
     
 </head>
 <body>
     
 <h1>Wayi金流 儲值遊戲幣範例</h1>
 直接從玩家帳號扣除WGS點數，進而購買商品。 
-<h4>1.<a target="_blank" href="http://developers.fun.wayi.com.tw/guides/currency_sdk#商品模式(廠商實作介面)">商品模式</a></h4>
+<h4>1.<a target="_blank" href="http://developers.funbuddy.com/guides/currency_sdk#商品模式(廠商實作介面)">商品模式</a></h4>
 <table border=1>
 	<caption>儲值金額</caption>
 	<th>遊戲幣</th><th>點數</th><th></th>
@@ -80,10 +80,10 @@ h2 {
 	</tr>
 
 </table>
-<link rel="stylesheet" type="text/css" href="//api.fun.wayi.com.tw/assets/socialplugin/css/fun_share.css">
+<link rel="stylesheet" type="text/css" href="//api.funbuddy.com/assets/socialplugin/css/fun_share.css">
   
 <br/>
-<h4>2.<a target="_blank" href="http://developers.fun.wayi.com.tw/guides/currency_sdk#儲值模式(廠商實作介面)">儲值模式</a></h4>
+<h4>2.<a target="_blank" href="http://developers.funbuddy.com/guides/currency_sdk#儲值模式(廠商實作介面)">儲值模式</a></h4>
 儲值模式提供直接儲值遊戲幣功能。User選擇儲值管道後，直接選擇兌換額度，並全部轉成遊戲幣，即不依附商品。<br/>
 <input value="儲值模式" type="button" onclick="javascript:gamecash_mode();">
 <hr>

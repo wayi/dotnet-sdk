@@ -14,8 +14,8 @@ namespace f8dnetsdk2010
     {
  
         //TO-DO
-        string APP_ID = "545";                                  //YOUR_APP_ID
-        string APP_SECRET = "d1496ee7308c409a27df5bcd6f4a482f";          //YOUR_APP_SECRET
+        string APP_ID = "YOUR_APP_ID";                                  //YOUR_APP_ID
+        string APP_SECRET = "YOUR_APP_SECRET";          //YOUR_APP_SECRET
         string REDIRECT_URI = "http://localhost/f8d/Default.aspx"; //redirect to your login check after login F8D
 
         string Access_Token = "";

@@ -25,7 +25,7 @@ namespace f8dnetsdk2010
     {
         //TO-DO
         //1.Enter your app information below
-        String APP_SECRET = "d1496ee7308c409a27df5bcd6f4a482f";          //YOUR_APP_SECRET
+        String APP_SECRET = "YOUR_APP_SECRET";          //YOUR_APP_SECRET
 
         protected void Page_Load(object sender, EventArgs e)
         {
