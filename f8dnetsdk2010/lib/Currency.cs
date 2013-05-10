@@ -26,9 +26,7 @@ namespace f8dnetsdk2010
 
             //
             // Decode the data
-            String sig = base64Decode(encoded_sig);
 
-            String testtt = base64Decode(payload);
             JObject data = JObject.Parse(base64Decode(payload));
 
             if (data["algorithm"].ToString().ToUpper() != "HMAC-SHA256")
@@ -38,31 +36,32 @@ namespace f8dnetsdk2010
             }
 
             // Check signature
-            String expected_sig = hash_hmac_sha256(payload, secret);
+            byte[] sig = Convert.FromBase64String(encoded_sig);
+            byte[] expected_sig = hash_hmac_sha256(payload, secret);
 
-            if (sig != expected_sig)
+            for (int i = 0; i < sig.Length && i < expected_sig.Length; i++)
             {
-                //error_log('Bad Signed JSON signature!');
-                return null;
+                if (sig[i] != expected_sig[i])
+                {
+                    //error_log('Bad Signed JSON signature!');
+                    return null;
+                }
             }
 
             return data;
         }
 
-        public static String hash_hmac_sha256(String message, String secret)
+        public static byte[] hash_hmac_sha256(String message, String secret)
         {
             secret = secret ?? "";
-            var encoding = new System.Text.UTF8Encoding();
 
+            var encoding = new System.Text.UTF8Encoding();
             byte[] keyByte = encoding.GetBytes(secret);
             byte[] messageBytes = encoding.GetBytes(message);
-            using (var hmacsha256 = new HMACSHA256(keyByte))
-            {
-                byte[] hashmessage = hmacsha256.ComputeHash(messageBytes);
-                char[] decoded_char = encoding.GetChars(hashmessage);
-                string result = new String(decoded_char);
-                return result;
-            }
+            var hmacsha256 = new HMACSHA256(keyByte);
+            byte[] hashmessage = hmacsha256.ComputeHash(messageBytes);
+            return hashmessage;
+
         }
 
         public static String base64Decode(String data)

@@ -18,8 +18,8 @@ namespace f8dnetsdk2010
     {
         //const
         string API_SDK = "F8D .NET SDK";
-        string API_VERSION = "1.2.0";
-        string URL_API = "http://api.funbuddy.com/";
+        string API_VERSION = "1.2.1";
+        string URL_API = "https://api.funbuddy.com/";
 
         //attribute
         int appId;
